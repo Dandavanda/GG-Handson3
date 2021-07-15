@@ -4,10 +4,14 @@ import './index.css';
 import Index from './pages/home';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
+import gif from './data/data2';
+import Form from './components/form/index'
+import Images from './components/images';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Index />
+    <Form/>
+    <Images urlImg={gif.url} titleImg={gif.title}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
